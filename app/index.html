@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World - Apache</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .info {
+            background: #e7f3ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🚀 Hello World!</h1>
+    <p>Esta é uma aplicação web rodando no Apache com Docker</p>
+
+    <div class="info">
+        <h3>📋 Informações do Servidor:</h3>
+        <p><strong>Servidor:</strong> Apache HTTPD</p>
+        <p><strong>Container:</strong> Docker</p>
+        <p><strong>Porta:</strong> 8080</p>
+        <p><strong>Data:</strong> <span id="current-date"></span></p>
+    </div>
+
+    <p>✅ Aplicação web completa funcionando!</p>
+</div>
+
+<script>
+    document.getElementById('current-date').textContent = new Date().toLocaleString();
+</script>
+</body>
+</html>
